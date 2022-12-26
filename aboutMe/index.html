@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+</head>
+<body>
+  <h1>About Me</h1>
+  
+  <ul>
+    <li>Nickname: <span id="nickname"></span>
+    <li>Favorites:  <span id="favorites"></span>
+    <li>Hometown: <span id="hometown"></span>
+   </ul>
+  
+   <script>
+    document.body.style.fontFamily = 'Arial, sans-serif';
+    document.getElementById('nickname').innerHTML = "Oliver";
+    document.getElementById('favorites').innerHTML = "Soccer";
+    document.getElementById('hometown').innerHTML = "Japan";
+
+    let tag = document.getElementsByTagName('li');
+    for (i=0; i<tag.length; i++){
+        tag[i].className = "listitem";
+    }
+
+    let photo = document.createElement('img');
+    photo.src = "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Bugs_Bunny.svg/1200px-Bugs_Bunny.svg.png";
+    document.body.appendChild(photo)
+    photo.style.width = "200px"
+   </script>
+ </body>
+</html>

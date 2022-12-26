@@ -1,0 +1,18 @@
+* {
+    margin: 2em 0 2em 8em;
+    padding: 2em;
+    background-color: aqua;
+}
+
+#clock {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid black 3px;
+    border-radius: 1em;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
